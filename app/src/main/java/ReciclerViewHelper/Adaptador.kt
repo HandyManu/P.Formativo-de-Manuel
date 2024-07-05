@@ -1,0 +1,4 @@
+package ReciclerViewHelper
+
+class Adaptador {
+}
