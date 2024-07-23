@@ -20,9 +20,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="900dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_add_box_24"
+                tools:layout_editor_absoluteX="324dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/imgAgregar"
         android:layout_width="70dp"
@@ -34,4 +43,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/baseline_add_box_24" />
+=======
+>>>>>>> 468e0e54fb324ae73b05fe2ef6cd0a954bb874fd
 </androidx.constraintlayout.widget.ConstraintLayout>
