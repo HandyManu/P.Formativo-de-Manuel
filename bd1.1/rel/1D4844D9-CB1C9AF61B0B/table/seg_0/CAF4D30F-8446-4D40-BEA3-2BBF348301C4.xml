@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CAF4D30F-8446-4D40-BEA3-2BBF348301C4" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_MEDICAMENTOS">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>TB_MEDICAMENTOS</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>60660ABE-1F69-282D-D59E-2A9C4E4BFB75</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UUID_MEDICAMENTO" id="35186C7E-D531-AFFD-DED6-9861946B756A">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_MEDICAMENTOS</sourceObjSchema>
+<sourceObjName>UUID_MEDICAMENTO</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>031AF8D6-7AC2-F53E-24BD-8D554AD4901D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDICAMENTOSASIGNADOS" id="C4683508-585C-3DF2-EE7F-95555A30B9CA">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_MEDICAMENTOS</sourceObjSchema>
+<sourceObjName>MEDICAMENTOSASIGNADOS</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>32EEBCC7-AD45-708E-B843-C17E05608744</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORADEAPLICACION" id="FDB2EE0F-14B1-3F4E-6F10-126BE9956CCD">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_MEDICAMENTOS</sourceObjSchema>
+<sourceObjName>HORADEAPLICACION</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>ECDE2683-B0E1-B987-1928-30A0D566294C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1B7CE22-3BC2-635A-DE81-661F2D1CFB75" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_MEDICAMENTOS_PK">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>SYS_C009139</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>A4417AE8-6461-16F9-3FDF-1C232C25F1B4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35186C7E-D531-AFFD-DED6-9861946B756A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

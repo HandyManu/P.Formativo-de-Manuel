@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DDD7D30A-4119-8236-8985-D0AA56C059A9" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_HABITACION">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>TB_HABITACION</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>17B7B1E8-DB67-0C1B-90E1-66388E610615</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UUID_HABITACION" id="30932BA6-DCBC-1703-5CB8-1E24BC7BECA7">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_HABITACION</sourceObjSchema>
+<sourceObjName>UUID_HABITACION</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>1728BCDD-0304-FB2F-68C9-57EF45CE7126</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERODEHABITACION" id="FD2F5C18-CB19-CBB3-B6F6-110983245746">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_HABITACION</sourceObjSchema>
+<sourceObjName>NUMERODEHABITACION</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>A4C23B3E-5008-704D-EE65-0990956913A2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UUID_CAMA" id="EFEC089F-07BB-E414-2E9D-ED1CC363004D">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_HABITACION</sourceObjSchema>
+<sourceObjName>UUID_CAMA</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>4276FECE-198F-C34D-EDD4-4775A5639BEC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9FC3B96E-B893-88C3-9930-63B094BD155B" referredColumn="FE5EE165-B57C-9D3E-1F6A-BFFFBFD63193"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="865F99F0-CA84-D1E7-AF71-C367C4473290" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_HABITACION_PK">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>SYS_C009137</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>BA2DFC8C-F761-DE89-7EAC-49B6B898B023</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30932BA6-DCBC-1703-5CB8-1E24BC7BECA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9561FC33-EC24-8678-CFD9-08E1F747C101" name="FK_CAMA">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFEC089F-07BB-E414-2E9D-ED1CC363004D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13B33E7F-762E-BB93-2058-680C6884F7E4" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_ENFERMEDAD">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>TB_ENFERMEDAD</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>33AAC62D-0F22-EE88-8EAD-5DEA0C3A382E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UUID_ENFERMEDAD" id="71F9532F-E696-80A0-974A-1569A46B2F7F">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_ENFERMEDAD</sourceObjSchema>
+<sourceObjName>UUID_ENFERMEDAD</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>C97D6040-6924-2CD3-6D30-9BFDAE764273</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENFERMEDAD" id="15BC1BCA-F25E-E6CF-8A94-94E2C4824945">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_ENFERMEDAD</sourceObjSchema>
+<sourceObjName>ENFERMEDAD</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>7B70E951-315C-3AA7-842B-F12F17CB2650</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27E06C48-3085-3198-BCF3-A7A61129EA27" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_ENFERMEDAD_PK">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>SYS_C009135</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>7B4F2567-3FDB-2336-D5A0-1607980C8D73</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71F9532F-E696-80A0-974A-1569A46B2F7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

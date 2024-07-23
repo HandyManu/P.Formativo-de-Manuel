@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C2969A0C-BFAF-CF89-4564-EACEFAEDE06D" containerWithKeyObject="B4F645BA-9B18-3EDB-AAC0-75BF9E106561" localFKIndex="BB1391DC-2E26-6444-F58C-CEC2C4D6C184" name="FK_ENFEREMEDAD">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>FK_ENFEREMEDAD</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>D0DC8F66-4C5A-DAEC-64AD-D104560C41E1</importedID>
+<referredTableLongName>MANUEL_DEVELOPER.TB_ENFERMEDAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>13B33E7F-762E-BB93-2058-680C6884F7E4</referredTableID>
+<keyObject>27E06C48-3085-3198-BCF3-A7A61129EA27</keyObject>
+<referredKeyID>27E06C48-3085-3198-BCF3-A7A61129EA27</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>UUID_ENFERMEDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

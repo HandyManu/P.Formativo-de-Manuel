@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_CAMA" directorySegmentName="seg_0" id="FC1CF000-E171-6315-9DC3-902749B6642A">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:50:05 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<schemaObject>15F989BE-543C-E9A1-6A63-935E5877CCFE</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>C500CD8D-83BA-A0B3-2718-AA8A634FA1F7</segment>
+<tableSpace>9DF0769D-33BF-4BBC-4D89-69FA6BB7FDD2</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NUMERO_DE_CAMA" id="67CCA8E5-F293-D397-C7F7-945829D8607E">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:50:05 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UUID_CAMA" id="FE5EE165-B57C-9D3E-1F6A-BFFFBFD63193">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:50:05 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_CAMA_PK" id="0FD8423D-9F02-17B5-D227-6C9135D37F0A">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:50:05 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<schemaObject>15F989BE-543C-E9A1-6A63-935E5877CCFE</schemaObject>
+<segment>F2B0378E-99EF-3FE2-8C4F-0AB69BB5784D</segment>
+<tableSpace>9DF0769D-33BF-4BBC-4D89-69FA6BB7FDD2</tableSpace>
+<indexSegment>F2B0378E-99EF-3FE2-8C4F-0AB69BB5784D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

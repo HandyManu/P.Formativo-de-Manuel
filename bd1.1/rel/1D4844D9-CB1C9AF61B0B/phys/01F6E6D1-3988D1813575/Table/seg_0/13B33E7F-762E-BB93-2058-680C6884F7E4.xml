@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_ENFERMEDAD" directorySegmentName="seg_0" id="13B33E7F-762E-BB93-2058-680C6884F7E4">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<schemaObject>15F989BE-543C-E9A1-6A63-935E5877CCFE</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>C500CD8D-83BA-A0B3-2718-AA8A634FA1F7</segment>
+<tableSpace>9DF0769D-33BF-4BBC-4D89-69FA6BB7FDD2</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ENFERMEDAD" id="15BC1BCA-F25E-E6CF-8A94-94E2C4824945">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UUID_ENFERMEDAD" id="71F9532F-E696-80A0-974A-1569A46B2F7F">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_ENFERMEDAD_PK" id="27E06C48-3085-3198-BCF3-A7A61129EA27">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<schemaObject>15F989BE-543C-E9A1-6A63-935E5877CCFE</schemaObject>
+<segment>F2B0378E-99EF-3FE2-8C4F-0AB69BB5784D</segment>
+<tableSpace>9DF0769D-33BF-4BBC-4D89-69FA6BB7FDD2</tableSpace>
+<indexSegment>F2B0378E-99EF-3FE2-8C4F-0AB69BB5784D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

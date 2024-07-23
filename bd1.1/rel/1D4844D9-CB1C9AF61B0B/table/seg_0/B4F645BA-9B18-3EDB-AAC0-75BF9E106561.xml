@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4F645BA-9B18-3EDB-AAC0-75BF9E106561" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_PACIENTE">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>TB_PACIENTE</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>AF3FBF0B-1E32-6851-9B20-BC0A3090DDC7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UUID_PACIENTE" id="5B831E2B-6784-8695-1834-15425D57033B">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_PACIENTE</sourceObjSchema>
+<sourceObjName>UUID_PACIENTE</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>7296E804-E88F-8042-9CCC-8C1ACCE233C5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRES" id="CF3C3204-8EEC-53FE-65DC-0110B69AE4EE">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_PACIENTE</sourceObjSchema>
+<sourceObjName>NOMBRES</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>29BF5C69-9625-7B19-2C9A-65F818466D36</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APELLIDOS" id="1D22A850-C98F-8624-00CA-0E57EDBE78C2">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_PACIENTE</sourceObjSchema>
+<sourceObjName>APELLIDOS</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>D51102FE-DE67-C19E-0EB6-B083853EA8DA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDAD" id="B8EC6044-7BC7-DB12-9B4C-77898B326978">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_PACIENTE</sourceObjSchema>
+<sourceObjName>EDAD</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>32FC644B-ADF6-5E5D-CA37-EC6E9D2D413E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UUID_ENFERMEDAD" id="4AFA4D0A-9FCB-FDC1-9FB3-3DAA7A405A1F">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_PACIENTE</sourceObjSchema>
+<sourceObjName>UUID_ENFERMEDAD</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>2054C94A-400F-4706-0EF4-32A2EEE6734A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2969A0C-BFAF-CF89-4564-EACEFAEDE06D" referredColumn="71F9532F-E696-80A0-974A-1569A46B2F7F"/>
+</associations>
+</Column>
+<Column name="UUID_HABITACION" id="6E4C0CFE-2CA6-4935-EF43-151C8EE84CCB">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_PACIENTE</sourceObjSchema>
+<sourceObjName>UUID_HABITACION</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>15D6FE7F-B32D-A012-8BAD-20B825A799CE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CD16076-82DE-ECB4-8BC1-6835B48ECC77" referredColumn="30932BA6-DCBC-1703-5CB8-1E24BC7BECA7"/>
+</associations>
+</Column>
+<Column name="UUID_MEDICAMENTO" id="9A84C7E1-BC22-4492-4D9B-F31A3D98FE23">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_PACIENTE</sourceObjSchema>
+<sourceObjName>UUID_MEDICAMENTO</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>4262C8E3-8EB1-5CCD-D094-84B18291CC7E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="037B2500-BA4A-23E9-C345-C57D3600AEE4" referredColumn="35186C7E-D531-AFFD-DED6-9861946B756A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37D37B39-F15E-04B5-D563-7AA9227150C1" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_PACIENTE_PK">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>SYS_C009140</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>704175A6-68E3-0FA6-0B04-9D9D48730894</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B831E2B-6784-8695-1834-15425D57033B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB1391DC-2E26-6444-F58C-CEC2C4D6C184" name="FK_ENFEREMEDAD">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AFA4D0A-9FCB-FDC1-9FB3-3DAA7A405A1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79BA4D1D-6FB2-33E1-41A7-A87C893E1C4C" name="FK_HABITACION">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E4C0CFE-2CA6-4935-EF43-151C8EE84CCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F891C4C5-C4E6-9079-6991-5D4D7EA77606" name="FK_MEDICAMENTO">
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A84C7E1-BC22-4492-4D9B-F31A3D98FE23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

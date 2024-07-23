@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC1CF000-E171-6315-9DC3-902749B6642A" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_CAMA">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>TB_CAMA</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:50:05 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>1F81350B-CF61-9D3E-402F-200A868D239F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UUID_CAMA" id="FE5EE165-B57C-9D3E-1F6A-BFFFBFD63193">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_CAMA</sourceObjSchema>
+<sourceObjName>UUID_CAMA</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:50:05 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>2C48E202-8796-0F6D-5CFA-B59AA5F08E32</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_DE_CAMA" id="67CCA8E5-F293-D397-C7F7-945829D8607E">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>TB_CAMA</sourceObjSchema>
+<sourceObjName>NUMERO_DE_CAMA</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:50:05 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>2BAAE6B3-EA95-0D26-BED6-F1C46F441C9F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0FD8423D-9F02-17B5-D227-6C9135D37F0A" schemaObject="15F989BE-543C-E9A1-6A63-935E5877CCFE" name="TB_CAMA_PK">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>SYS_C009136</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:50:05 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>DAB2C04A-3F7B-7872-9D08-AED6429CCD9D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE5EE165-B57C-9D3E-1F6A-BFFFBFD63193"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

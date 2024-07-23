@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9FC3B96E-B893-88C3-9930-63B094BD155B" containerWithKeyObject="DDD7D30A-4119-8236-8985-D0AA56C059A9" localFKIndex="9561FC33-EC24-8678-CFD9-08E1F747C101" name="FK_CAMA">
+<sourceConnName>ProyectoFormativo</sourceConnName>
+<sourceObjSchema>MANUEL_DEVELOPER</sourceObjSchema>
+<sourceObjName>FK_CAMA</sourceObjName>
+<createdBy>maosorpa</createdBy>
+<createdTime>2024-07-23 02:47:04 UTC</createdTime>
+<ownerDesignName>bd1.1</ownerDesignName>
+<importedID>73BB43B0-3424-BDCB-92FD-6B86B32B425D</importedID>
+<referredTableLongName>MANUEL_DEVELOPER.TB_CAMA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FC1CF000-E171-6315-9DC3-902749B6642A</referredTableID>
+<keyObject>0FD8423D-9F02-17B5-D227-6C9135D37F0A</keyObject>
+<referredKeyID>0FD8423D-9F02-17B5-D227-6C9135D37F0A</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>UUID_CAMA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
