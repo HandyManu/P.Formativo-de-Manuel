@@ -29,9 +29,11 @@
                 app:srcCompat="@drawable/baseline_add_box_24"
                 tools:layout_editor_absoluteX="324dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    </ScrollView><![CDATA[
 
-<<<<<<< HEAD
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="370dp"="@+id/" />]]>
+
     <ImageView
         android:id="@+id/imgAgregar"
         android:layout_width="70dp"
