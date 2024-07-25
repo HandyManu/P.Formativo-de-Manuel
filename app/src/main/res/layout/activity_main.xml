@@ -28,6 +28,14 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/baseline_add_box_24"
                 tools:layout_editor_absoluteX="324dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="407dp"
+                android:layout_height="899dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView><![CDATA[
 
