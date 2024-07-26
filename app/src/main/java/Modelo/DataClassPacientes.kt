@@ -1,12 +1,11 @@
 package Modelo
 
 data class DataClassPacientes(
-    val uuidNumero:String,
-    var titulo:String,
-    var descripcion:String,
-    var autor : String,
-    var email: String,
-    val fechaCreacion : String,
-    var estado :String,
-    var fechaFinalizacion:String
+    val UUID_Paciente:String,
+    var Nombres:String,
+    var Apellidos:String,
+    var Edad : String,
+    var UUID_Enfermedad: String,
+    val UUID_Habitacion : String,
+    var UUID_Medicamento :String
 )

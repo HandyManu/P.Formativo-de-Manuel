@@ -46,5 +46,24 @@ CONSTRAINT fk_medicamento foreign key (UUID_Medicamento) references TB_Medicamen
 
 UPDATE TB_Paciente SET UUID_Paciente= SYS_GUID()
 
+SELECT 
+    P.Nombres,
+    P.Apellidos,
+    P.Edad,
+    E.ENFERMEDAD,
+    H.NumeroDeHabitacion,
+    C.Numero_De_Cama,
+    M.MedicamentosAsignados,
+    M.HoraDeAplicacion
+FROM 
+    TB_Paciente P
+INNER JOIN 
+    TB_Enfermedad E ON P.UUID_Enfermedad = E.UUID_Enfermedad
+INNER JOIN 
+    TB_Habitacion H ON P.UUID_Habitacion = H.UUID_Habitacion
+INNER JOIN 
+    TB_Cama C ON H.UUID_Cama = C.UUID_Cama
+INNER JOIN 
+    TB_Medicamentos M ON P.UUID_Medicamento = M.UUID_Medicamento;
 
 
