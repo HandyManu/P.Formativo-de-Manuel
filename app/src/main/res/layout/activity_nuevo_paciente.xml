@@ -240,6 +240,7 @@
         android:layout_width="143dp"
         android:layout_height="46dp"
         android:text="Guardar"
+        android:backgroundTint="#0000FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.604"

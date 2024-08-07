@@ -1,6 +1,8 @@
 package manuel.ortega.proyecto_formativo
 
 import Modelo.ClaseConexion
+import Modelo.DataClassPacientes
+import ReciclerViewHelper.Adaptador
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -8,6 +10,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -34,56 +38,67 @@ class Activity_Nuevo_Paciente : AppCompatActivity() {
              val medicamentos = findViewById<TextView>(R.id.txt_medicamento)
              val horaAplicacion = findViewById<TextView>(R.id.txt_hora)
              val btnGuardar = findViewById<Button>(R.id.btn_guardar)
+        val rcvPacientes = findViewById<RecyclerView>(R.id.rcvPacientes)
+
+        rcvPacientes.layoutManager = LinearLayoutManager(this)
+
+
+
+
+        fun obtenerPacientes(): List<DataClassPacientes> {
+            val objConexion = ClaseConexion().cadenaConexion()
+            val statement = objConexion?.createStatement()
+            val resultSet = statement?.executeQuery("SELECT * FROM TB_Paciente")!!
+
+            val listaPacientes = mutableListOf<DataClassPacientes>()
+            while (resultSet.next()) {
+                val UUIDPaciente = resultSet.getString("UUID_Paciente")
+                val Nombre = resultSet.getString("Nombres")
+                val Apellido = resultSet.getString("Apellidos")
+                val Edad = resultSet.getString("Edad")
+                val Enfermedad = resultSet.getString("ENFERMEDAD")
+                val NumeroHabitacion = resultSet.getString("NumeroDeHabitacion")
+                val NumeroCama = resultSet.getString("Numero_De_Cama")
+                val MedicamentosAsignados = resultSet.getString("MedicamentosAsignados")
+                val HoraDeAplicacion = resultSet.getString("HoraDeAplicacion")
+
+
+                val valorPacientes = DataClassPacientes(UUIDPaciente, Nombre, Apellido, Edad, Enfermedad, NumeroHabitacion, NumeroCama, MedicamentosAsignados , HoraDeAplicacion)
+                listaPacientes.add(valorPacientes)
+            }
+            return listaPacientes
+        }
+
+        CoroutineScope(Dispatchers.IO).launch {
+            val tiketsDatos = obtenerPacientes()
+            withContext(Dispatchers.Main) {
+                val adapter = Adaptador(tiketsDatos)
+                rcvPacientes.adapter = adapter
+            }
+        }
 
         btnGuardar.setOnClickListener {
             CoroutineScope(Dispatchers.IO).launch {
                 val claseConexion = ClaseConexion().cadenaConexion()
+                val addPaciente = claseConexion?.prepareStatement("INSERT INTO TB_Paciente(UUID_Paciente, Nombres , Apellidos , Edad , ENFERMEDAD , NumeroDeHabitacion , Numero_De_Cama , MedicamentosAsignados , HoraDeAplicacion) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)")!!
 
-                // Inserción en TB_Enfermedad
-                val addEnfermedad = claseConexion?.prepareStatement("INSERT INTO TB_Enfermedad(UUID_Enfermedad, ENFERMEDAD) VALUES(?, ?)")!!
-                val uuidEnfermedad = UUID.randomUUID().toString()
-                addEnfermedad.setString(1, uuidEnfermedad)
-                addEnfermedad.setString(2, enfermedad.text.toString())
-                addEnfermedad.executeUpdate()
-
-                // Inserción en TB_Cama
-                val addCama = claseConexion?.prepareStatement("INSERT INTO TB_Cama(UUID_Cama, Numero_De_Cama) VALUES(?, ?)")!!
-                val uuidCama = UUID.randomUUID().toString()
-                addCama.setString(1, uuidCama)
-                addCama.setString(2, numeroCama.text.toString())
-                addCama.executeUpdate()
-
-                // Inserción en TB_Habitacion
-                val addHabitacion = claseConexion?.prepareStatement("INSERT INTO TB_Habitacion(UUID_Habitacion, NumeroDeHabitacion, UUID_Cama) VALUES(?, ?, ?)")!!
-                val uuidHabitacion = UUID.randomUUID().toString()
-                addHabitacion.setString(1, uuidHabitacion)
-                addHabitacion.setString(2, numeroHabitacion.text.toString())
-                addHabitacion.setString(3, uuidCama)
-                addHabitacion.executeUpdate()
-
-                // Inserción en TB_Medicamentos
-                val addMedicamento = claseConexion?.prepareStatement("INSERT INTO TB_Medicamentos(UUID_Medicamento, MedicamentosAsignados, HoraDeAplicacion) VALUES(?, ?, ?)")!!
-                val uuidMedicamento = UUID.randomUUID().toString()
-                addMedicamento.setString(1, uuidMedicamento)
-                addMedicamento.setString(2, medicamentos.text.toString())
-                addMedicamento.setString(3, horaAplicacion.text.toString())
-                addMedicamento.executeUpdate()
-
-                // Inserción en TB_Paciente
-                val addPaciente = claseConexion?.prepareStatement("INSERT INTO TB_Paciente(UUID_Paciente, Nombres, Apellidos, Edad, UUID_Enfermedad, UUID_Habitacion, UUID_Medicamento) VALUES(?, ?, ?, ?, ?, ?, ?)")!!
-                val uuidPaciente = UUID.randomUUID().toString()
-                addPaciente.setString(1, uuidPaciente)
+                addPaciente.setString(1, UUID.randomUUID().toString())
                 addPaciente.setString(2, nombre.text.toString())
                 addPaciente.setString(3, apellido.text.toString())
                 addPaciente.setString(4, edad.text.toString())
-                addPaciente.setString(5, uuidEnfermedad)
-                addPaciente.setString(6, uuidHabitacion)
-                addPaciente.setString(7, uuidMedicamento)
+                addPaciente.setString(5, enfermedad.text.toString())
+                addPaciente.setString(6, numeroHabitacion.text.toString())
+                addPaciente.setString(7, numeroCama.text.toString())
+                addPaciente.setString(8, medicamentos.text.toString())
+                addPaciente.setString(9, horaAplicacion.text.toString())
                 addPaciente.executeUpdate()
 
-                // Actualiza la UI con los nuevos datos si es necesario
+                val nuevosPacientes = obtenerPacientes()
                 withContext(Dispatchers.Main) {
-                    // Aquí puedes actualizar tu RecyclerView o cualquier otra vista
+                    (rcvPacientes.adapter as? Adaptador)?.actualizarLista(nuevosPacientes)
+
+
+
                 }
             }
         }

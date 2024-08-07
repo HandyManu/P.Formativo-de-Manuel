@@ -5,7 +5,9 @@ data class DataClassPacientes(
     var Nombres:String,
     var Apellidos:String,
     var Edad : String,
-    var UUID_Enfermedad: String,
-    val UUID_Habitacion : String,
-    var UUID_Medicamento :String
+    var Enfermedad: String,
+    val NumeroDeHabitacion : String,
+    val NumeroDeCama : String,
+    var MedicamentosAsignados :String,
+    val HoraDeAplicacion : String
 )

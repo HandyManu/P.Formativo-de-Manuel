@@ -25,7 +25,7 @@
             android:textSize="34dp" />
 
         <ImageView
-            android:id="@+id/img_editar"
+            android:id="@+id/img_borrar"
             android:layout_width="72dp"
             android:layout_height="match_parent"
             android:layout_weight="0.1"
